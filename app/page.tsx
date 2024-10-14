@@ -3,7 +3,6 @@
 import React from 'react';
 import { Textarea } from '../components/ui/textarea';
 
-
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen gap-8">
