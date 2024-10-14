@@ -17,6 +17,8 @@ import {
   ReferenceLine,
   XAxis,
   YAxis,
+  // Remove or comment out the ValueType import if it's not used
+  // ValueType,
 } from "recharts"
 
 import {
@@ -34,8 +36,7 @@ import {
 } from "@/components/ui/chart"
 import { Separator } from "@/components/ui/separator"
 
-
-
+// The rest of your Charts component code remains the same
 export function Charts() {
   return (
     <div className="chart-wrapper mx-auto flex max-w-6xl flex-col flex-wrap items-start justify-center gap-6 p-6 sm:flex-row sm:p-8">
@@ -297,7 +298,7 @@ export function Charts() {
           <CardHeader>
             <CardTitle>Progress</CardTitle>
             <CardDescription>
-              You're average more steps a day this year than last year.
+              You are averaging more steps a day this year than last year.
             </CardDescription>
           </CardHeader>
           <CardContent className="grid gap-4">
