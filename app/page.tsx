@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { Textarea } from '../components/ui/textarea';
+import { Charts } from '../components/charts-01';
 
 export default function Home() {
   return (
@@ -10,6 +11,9 @@ export default function Home() {
       <h2 className="text-2xl font-semibold mb-6">Welcome to the Demo Page</h2>
       <div className="w-full max-w-md">
         <Textarea placeholder="Type your message here" />
+      </div>
+      <div className="w-full max-w-4xl">
+        <Charts />
       </div>
     </div>
   );
