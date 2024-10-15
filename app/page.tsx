@@ -4,6 +4,9 @@ import React from 'react';
 import { Textarea } from '../components/ui/textarea';
 import { Charts } from '../components/charts-01';
 
+// Inside your chart component
+
+
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen gap-8">
