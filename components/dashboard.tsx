@@ -28,7 +28,12 @@ import {
   Cell
 } from 'recharts'
 
-const Sidebar = ({ activeItem, setActiveItem }: { activeItem: string; setActiveItem: (item: string) => void }) => {
+interface SidebarProps {
+  activeItem: string;
+  setActiveItem: (item: string) => void;
+}
+
+const Sidebar: React.FC<SidebarProps> = ({ activeItem, setActiveItem }) => {
   const menuItems = [
     { name: 'Dashboard', icon: LucideBarChart },
     { name: 'Policies', icon: FileText },
@@ -189,8 +194,8 @@ const DashboardContent = () => {
 }
 
 // Main component definition
-export function Dashboard() {
-  const [activeItem, setActiveItem] = useState('Dashboard')
+export const Dashboard: React.FC = () => {
+  const [activeItem, setActiveItem] = useState<string>('Dashboard')
 
   return (
     <div className="flex h-screen bg-gray-100">
@@ -200,7 +205,11 @@ export function Dashboard() {
   )
 }
 
-const MainContent = ({ activeItem }: { activeItem: string }) => {
+interface MainContentProps {
+  activeItem: string;
+}
+
+const MainContent: React.FC<MainContentProps> = ({ activeItem }) => {
   return (
     <div className="flex-1 p-8 overflow-auto">
       <div className="flex justify-between items-center mb-6">
