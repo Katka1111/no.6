@@ -3,12 +3,8 @@
 import React, { useState } from 'react'
 import {
   BarChart as LucideBarChart,
-  Activity,
   FileText,
-  CreditCard,
-  PieChart,
   User,
-  Settings,
   HelpCircle,
   Download,
   Plus
