@@ -3,12 +3,8 @@
 import React, { useState } from 'react'
 import {
   BarChart as LucideBarChart,
-  Activity,
   FileText,
-  CreditCard,
-  PieChart,
   User,
-  Settings,
   HelpCircle,
   Download,
   Plus
@@ -43,11 +39,7 @@ const Sidebar: React.FC<SidebarProps> = ({ activeItem, setActiveItem }) => {
   const menuItems = [
     { name: 'Dashboard', icon: LucideBarChart },
     { name: 'Policies', icon: FileText },
-    { name: 'Claims', icon: Activity },
-    { name: 'Payments', icon: CreditCard },
-    { name: 'Reports', icon: PieChart },
     { name: 'Profile', icon: User },
-    { name: 'Settings', icon: Settings },
     { name: 'Help & Support', icon: HelpCircle },
   ]
 
